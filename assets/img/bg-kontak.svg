@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dasar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2233"/>
+      <stop offset="1" stop-color="#04121c"/>
+    </linearGradient>
+    <pattern id="titik" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="400" fill="url(#dasar)"/>
+  <rect width="1200" height="400" fill="url(#titik)"/>
+  <circle cx="1080" cy="-40" r="260" fill="#5cc934" fill-opacity="0.25"/>
+  <circle cx="1150" cy="380" r="180" fill="#38bdf8" fill-opacity="0.18"/>
+  <circle cx="60" cy="420" r="220" fill="#5cc934" fill-opacity="0.18"/>
+</svg>

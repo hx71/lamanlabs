@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dasar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0fbea"/>
+      <stop offset="0.55" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#f0f9ff"/>
+    </linearGradient>
+    <radialGradient id="ungu" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5cc934" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5cc934" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hijau" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="kisi" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#04121c" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="pudar" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="topeng">
+      <rect width="1440" height="800" fill="url(#pudar)"/>
+    </mask>
+  </defs>
+  <rect width="1440" height="800" fill="url(#dasar)"/>
+  <rect width="1440" height="800" fill="url(#kisi)" mask="url(#topeng)"/>
+  <circle cx="1180" cy="140" r="420" fill="url(#ungu)"/>
+  <circle cx="160" cy="700" r="380" fill="url(#hijau)"/>
+  <circle cx="720" cy="-80" r="300" fill="url(#ungu)" opacity="0.5"/>
+</svg>

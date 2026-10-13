@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* Gaya visual: ubah warna dan font di sini. Warna mengikuti logo (hijau #5cc934, biru tua #04121c). */
+@theme {
+  --color-brand: #26801a;
+  --color-brand-dark: #1f7416;
+  --color-brand-soft: #eefbe9;
+  --color-aksen: #5cc934;
+  --color-tinta: #04121c;
+  --color-wa: #26801a;
+  --color-wa-dark: #1f7416;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/plus-jakarta-sans.woff2") format("woff2");
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-white text-slate-700 antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
+
+@layer components {
+  .kontainer {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+  .bagian {
+    @apply py-16 sm:py-20;
+  }
+  .judul-bagian {
+    @apply mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl;
+  }
+  .sub-bagian {
+    @apply mt-3 max-w-2xl text-base text-slate-600;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition;
+  }
+  .btn-wa {
+    @apply bg-wa text-white shadow-sm shadow-wa/30 hover:bg-wa-dark hover:shadow-md;
+  }
+  .btn-utama {
+    @apply bg-brand text-white hover:bg-brand-dark;
+  }
+  .btn-garis {
+    @apply border border-slate-300 bg-white text-slate-800 hover:border-brand hover:text-brand;
+  }
+  .kartu {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm;
+  }
+  .kartu-angkat {
+    @apply transition duration-200 hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg;
+  }
+  .ikon-kotak {
+    @apply flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand;
+  }
+  .label-bagian {
+    @apply text-sm font-semibold uppercase tracking-wider text-brand;
+  }
+  /* Gambar latar. Path relatif terhadap assets/css/style.css. */
+  .bg-hero {
+    background: #f0fbea url("../img/bg-hero.svg") center / cover no-repeat;
+  }
+  .bg-pola {
+    background-image: url("../img/bg-pola.svg");
+  }
+  .bg-custom {
+    background: #04121c url("../img/bg-custom.svg") center / cover no-repeat;
+  }
+  .bg-kontak {
+    background: #04121c url("../img/bg-kontak.svg") center / cover no-repeat;
+  }
+  .daftar-cek li {
+    @apply relative pl-6;
+  }
+  .daftar-cek li::before {
+    content: "✓";
+    @apply absolute left-0 font-bold text-wa;
+  }
+  .daftar-cek li.tidak {
+    @apply text-slate-400;
+  }
+  .daftar-cek li.tidak::before {
+    content: "–";
+    @apply text-slate-400;
+  }
+}
