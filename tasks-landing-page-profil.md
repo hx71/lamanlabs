@@ -19,7 +19,7 @@ Keputusan di bawah diambil pada 13 Oktober 2026. Yang belum selesai tidak mengha
 - [x] **T-04** Domain paket: Standard mendapat .my.id, Premium mendapat .com.
 - [x] **T-05** Jalur custom: mulai Rp 2.000.000 dengan 3 kali revisi. Estimasi waktu pengerjaan belum ada.
 - [x] **T-06** Hosting: GitHub Pages untuk tahap awal.
-- [ ] **T-07** Nama brand: LamanLabs (mengikuti logo di `assets/img/`). Logo sudah ada; nama repositori GitHub belum ada. Jenis repositori sudah diputuskan: repositori proyek, alamat `https://<username>.github.io/<nama-repo>/`.
+- [x] **T-07** Nama brand: LamanLabs (mengikuti logo di `assets/img/`). Repositori: `hx71/lamanlabs`, alamat `https://hx71.github.io/lamanlabs/`. Jenis repositori sudah diputuskan: repositori proyek, alamat `https://<username>.github.io/<nama-repo>/`.
 
 ---
 
@@ -81,14 +81,14 @@ Dibatalkan. T-30, T-31, T-32, dan T-32a tidak dikerjakan karena bagian Template 
 - [x] **T-33** Tulis teks Hero, Layanan, Custom, dan Tentang dengan gaya situs referensi; teks ditulis ulang, tidak disalin.
 - [x] **T-34** Tulis isi FAQ.
 - [ ] **T-35** Ganti nilai sementara di `config.js` (nama brand, nomor WhatsApp, zona waktu) setelah T-01 dan T-07 selesai.
-- [ ] **T-36** Siapkan logo, favicon, dan gambar Open Graph. Logo dan favicon sudah terpasang; gambar Open Graph belum.
+- [x] **T-36** Siapkan logo, favicon, dan gambar Open Graph (`assets/img/og.jpg`, 1200×630).
 
 ---
 
 ## 7. SEO, Performa, dan Aksesibilitas
 
-- [ ] **T-37** Tambahkan meta title, description, dan Open Graph. (FR-18) Title, description, dan Open Graph dasar sudah ada; `og:url` dan `og:image` menunggu T-36 dan T-47.
-- [ ] **T-38** Tambahkan `robots.txt` dan `sitemap.xml`.
+- [x] **T-37** Tambahkan meta title, description, dan Open Graph, termasuk `og:url` dan `og:image`. (FR-18)
+- [x] **T-38** Tambahkan `robots.txt` dan `sitemap.xml`.
 - [ ] **T-39** Optimalkan gambar: WebP, atribut ukuran, dan lazy loading. (NFR-01)
 - [ ] **T-40** Periksa kontras warna, ukuran font, teks alt gambar, dan navigasi keyboard. (NFR-06)
 - [ ] **T-41** Jalankan Lighthouse; perbaiki hingga SEO minimal 90 dan waktu muat di bawah 2 detik pada 4G. (NFR-01, NFR-05)
@@ -107,10 +107,10 @@ Dibatalkan. T-30, T-31, T-32, dan T-32a tidak dikerjakan karena bagian Template 
 
 ## 9. Rilis
 
-- [ ] **T-46a** Jalankan `npm run build` dan commit `assets/css/style.css` hasil build. (NFR-01)
-- [ ] **T-47** Buat repositori publik di GitHub dan push branch `main`. (NFR-09)
+- [x] **T-46a** Jalankan `npm run build` dan commit `assets/css/style.css` hasil build. (NFR-01)
+- [x] **T-47** Buat repositori publik di GitHub dan push branch `main`. (NFR-09)
 - [ ] **T-48** Aktifkan GitHub Pages di Settings > Pages dengan sumber branch `main`, folder root, lalu pastikan "Enforce HTTPS" aktif. (NFR-02)
-- [ ] **T-49** Pastikan URL di meta Open Graph, `sitemap.xml`, dan `robots.txt` memakai alamat `https://<username>.github.io/<nama-repo>/`.
+- [x] **T-49** Pastikan URL di meta Open Graph, `sitemap.xml`, dan `robots.txt` memakai alamat `https://<username>.github.io/<nama-repo>/`.
 - [ ] **T-50** Uji ulang halaman di alamat `github.io`, termasuk pratinjau tautan saat dibagikan di WhatsApp.
 - [ ] **T-51** Daftarkan situs ke Google Search Console.
 - [ ] **T-52** (Nanti) Pasang domain sendiri: tambahkan file `CNAME`, atur DNS, lalu perbarui URL pada T-49.

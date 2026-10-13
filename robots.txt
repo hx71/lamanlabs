@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hx71.github.io/lamanlabs/sitemap.xml
